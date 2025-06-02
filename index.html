@@ -1,0 +1,159 @@
+<head>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-rows: 0fr 4fr 0fr;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas: 
+            "header header header"
+            "sidebar content notes"
+            "footer footer footer";
+            border: 2px solid rgb(111, 122, 122);
+            gap: 10px;
+        }
+        .header{
+            grid-area: header;
+            background-color: aqua;
+            padding: 20px;
+            border: 2px;
+            text-align: center;
+        }
+        .header h1{
+            color: rgb(230, 21, 91);
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+        .sidebar h1{
+            color: rgb(104, 135, 208);
+        }
+        .sidebar a{
+            text-decoration: none;
+            color: rgb(122, 56, 122);
+            font-size: 20px;
+        }
+        .content{
+            grid-area: content;
+            background-color: lightgreen;
+            padding:20px;
+        }
+        .content h1{
+            color: royalblue;
+        }
+        .content p{
+            font-size: 22px;
+        }
+        .content h2{
+            padding:5px;
+            color: blueviolet;
+        }
+        .content h3{
+            font-size: 40px;
+            color: rgb(164, 6, 244);
+        }
+        .content ul li{
+            font-size: 22px;
+            list-style: square;
+        }
+        .content ol li{
+            font-size:22px;
+            list-style: circle;
+        }
+        .notes{
+            grid-area: notes;
+            background-color: rgb(226, 154, 237);
+            padding: 20px;
+            text-align:center;
+        }
+        .notes h1{
+            color: rgb(165, 75, 29);
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgb(36, 164, 243);
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h1>SOLAR SYSTEM</h1>
+        </div>
+        <div class="sidebar">
+            <h1>Headings</h1>
+            <ul>
+                <li> <a href="#Cosmology">Cosmology</a></li>
+                <li> <a href="#Formation">Formation of the Solar System</a></li>
+                <li> <a href="#The_Sun">The Sun</a></li>
+                <li> <a href="#The_Eight_Planets">The Eight Planets</a></li>
+                <li> <a href="#Celestial_Objects">Celestial Objects</a></li>
+                <li> <a href="#Space_Exploration">Space Exploration</a></li>
+                <li> <a href="#Conclusion">Conclusion</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <center>
+                <h3>The Cosmic Journey</h3>
+            </center>
+            <h1 id="Cosmology">Cosmology:</h1><p>Cosmology is a scientific study of the universe as a whole, from its origin and evolution to its nature and properties. It is a branch of astronomy and physics that brings together the natural sciences in a joint effort to understand the physical universe as a unified whole. Cosmology also deals with the observable and theoretical aspects of the universe, such as the Big Bang, celestial mechanics, and the large scale structure of the universe.</p>
+            <h1 id="Formation">Formation of the Solar System:</h1>
+            <ul>
+                <li>Around 4.6 billion years ago, a vast cloud of gas and dust collapsed under gravity, leading to the birth of our Sun.</li>
+                <li>As the Sun formed, the remaining material created planets, moons, and countless celestial bodies.</li>
+                <li>This process, known as the nebular hypothesis, shaped the system we see today.</li>
+            </ul>
+            <h1 id="The_Sun">The Sun – The Heart of the Solar System:</h1>
+            <ol>
+                <li>The Sun is a gigantic nuclear reactor, responsible for providing heat, light, and energy to all planets.</li>
+                <li>It is composed mainly of hydrogen and helium, undergoing nuclear fusion to produce immense power.</li>
+                <li>Solar activity, like flares and sunspots, influences space weather and affects Earth’s communication systems.</li>
+            </ol>
+            <h1 id="The_Eight_Planets">The Eight Planets – A Diverse Family:</h1>
+            <h2>Terrestrial Planets (Rocky Worlds)</h2>
+            <ul>
+                <li>Mercury: The smallest planet, closest to the Sun, with extreme temperatures.</li>
+                <li>Venus: Known for its thick toxic atmosphere and intense heat, often called Earth’s twin.</li>
+                <li>Earth: The only known planet with life, featuring vast oceans and a protective atmosphere.</li>
+                <li>Mars: The "Red Planet," home to ancient valleys, potential water ice, and future exploration missions.</li>
+            </ul>
+            <h2>Gas and Ice Giants</h2>
+            <ol>
+                <li>Jupiter: The largest planet, with swirling storms like the Great Red Spot and dozens of moons.</li>
+                <li>Saturn: Famous for its stunning ring system, made of ice and rock particles.</li>
+                <li>Uranus: An icy world that rotates sideways, with a unique bluish appearance.</li>
+                <li>Neptune: The farthest planet, known for its powerful winds and deep blue color.</li>
+            </ol>
+            <h1 id="Celestial_Objects">Other Celestial Objects in the Solar System:</h1>
+            <ul>
+                <li>Moons: Earth’s Moon stabilizes our planet, while Jupiter and Saturn have moons with oceans beneath their surfaces.</li>
+                <li>Asteroids: Rocky remnants from the early solar system, found mainly in the Asteroid Belt between Mars and Jupiter.</li>
+                <li>Comets: Icy bodies that travel in long orbits, forming bright tails when near the Sun.</li>
+                <li>Dwarf Planets: Pluto, Ceres, and others don’t fit the full planetary definition but remain intriguing worlds.</li>
+            </ul>
+            <h1 id="Space_Exploration">Space Exploration – Discovering the Unknown:</h1>
+                <ol>
+                    <li>NASA, ISRO, and other space agencies send missions to study planets, moons, and deep space.</li>
+                    <li>Rovers like Perseverance explore Mars for signs of ancient life.</li>
+                    <li>Future missions aim to reach Europa and Titan, moons with potential for habitability.</li>
+                    <li>Space telescopes like James Web are uncovering the secrets of distant galaxies.</li>
+                </ol>
+            <h1 id="Conclusion">Conclusion</h1>
+            <p>The solar system is a dynamic and ever-changing place, offering scientific discoveries and future possibilities. As humanity advances in space exploration, new mysteries will unfold.</p>
+        </div>
+        <div class="notes">
+            <h1>Picture</h1>
+            <center>
+                <img src="Cosmology.png" width="250px" height="250px">
+            </center>
+            <h2>Links:</h2>
+            <li><a href="https://www.scifidimensions.com/where is the deepest cosmic?">https://www.scifidimensions.com/</a></li>
+        </div>
+        <div class="footer">I took the content about solar system which is exposed as movie.</div>
+    </div>
+</body>
